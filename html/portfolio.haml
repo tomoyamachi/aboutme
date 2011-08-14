@@ -1,0 +1,146 @@
+!!!
+/ paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
+/[if lt IE 7 ] <html class="no-js ie6" lang="en">
+/[if IE 7 ] <html class="no-js ie7" lang="en">
+/[if IE 8 ] <html class="no-js ie8" lang="en">
+/ [if (gte IE 9)|!(IE)]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}
+      %title ABOUT ME
+      %link{:href => "style.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+      %link{:href => "960.css", :media => "all", :rel => "stylesheet", :type => "text/css"}/
+      %script{:src => "jquery.js", :type => "text/javascript"}
+      :javascript
+        $(function(){
+        $(".box").click(function(){
+          window.location=$(this).find("a").attr("href");
+          return false;
+          });
+        });
+      :javascript
+        $(function(){
+        $(".blankBox").click(function(){
+          window.open($(this).find("a").attr("href"),"_blank");
+          return false;
+          });
+        });
+      /[if lt IE 9]
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  %body.home#top
+    %header
+      .container_12
+        %a.logo{:href => "#top"} AB&nbsp;&nbsp;&nbsp;T&nbsp;&nbsp;&nbsp;ME
+      .container_12.top-body
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#profile"} PROFILE
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#social"} SOCIAL
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#skill"} POWERS
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#works"} WORKS
+      #profile
+      .container_12
+        %a.logo{:href => "#top"} PR&nbsp;&nbsp;FILE
+      .container_12.body
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#top"} Amachi Tomoya
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} AGE:24
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#top"} MALE
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} Hiroshima
+        .go-top
+          %a{:href => "#top"} BACK
+      #social
+      .container_12
+        %a.logo{:href => "#top"} S&nbsp;&nbsp;CIAL
+      .container_12.body
+        .grid_3
+          .blankBox
+            %h2.upper
+              %a{:href => "http://www.simple-play.com",:target => "blank"} TechBlog
+        .grid_3
+          .blankBox
+            %h2.downer
+              %a{:href => "http://www.techlung.com",:target => "blank"} NewsBlog
+        .grid_3
+          .blankBox
+            %h2.upper
+              %a{:href => "https://twitter.com/tomoyamachi",:target => "blank"} Twitter
+        .grid_3
+          .blankBox
+            %h2.downer
+              %a{:href => "https://facebook.com/tomoyamachi",:target => "blank"} Facebook
+        .go-top
+          %a{:href => "#top"} BACK
+      #skill
+      .container_12
+        %a.logo{:href => "#top"} P&nbsp;&nbsp;WER
+      .container_12.body
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#top"} Ruby (Rails)
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} HTML &CSS
+        .grid_3
+          .box
+            %h2.upper
+              %a{:href => "#top"} MySQL
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} Linux Server
+        .go-top
+          %a{:href => "#top"} BACK
+      #works
+      .container_12
+        %a.logo{:href => "#top"} W&nbsp;&nbsp;RKS
+      .container_12.body
+        .grid_3
+          .blankBox
+            %h2.upper
+              %a{:href => "http://life.simple-play.com/"} Lifelog
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} Portofolio
+        .grid_3
+          .blankBox
+            %h2.upper
+              %a{:href => "http://easyparty.me/"} Party
+        .grid_3
+          .box
+            %h2.downer
+              %a{:href => "#top"} ...
+        .go-top
+          %a{:href => "#top"} BACK
+    .clear
+    %footer
+      .container
+        #copyright
+          Copyright
+          %a{:href => "http://twitter.com/tomyamachi", :target => "blank"} @tomoya amachi
+

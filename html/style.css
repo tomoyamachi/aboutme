@@ -1,0 +1,190 @@
+@charset "UTF-8";
+/*
+Theme Name: ffde00
+Theme URI: http://contrast.ie/blog
+Description: Minimal Theme
+Author: Contrast
+Author url: http://contrast.ie
+Version: 1.0
+Tags: clean
+*/
+/**
+ * HTML5 Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ *
+ * Credit is left where credit is due.
+ * Much inspiration was taken from these projects:
+ * - yui.yahooapis.com/2.8.1/build/base/base.css
+ * - camendesign.com/design/
+ * - praegnanz.de/weblog/htmlcssjs-kickstart
+ */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/* Font normalization inspired by YUI Library's fonts.css: developer.yahoo.com/yui/
+
+/* Normalize monospace sizing:
+/*   en.wikipedia.org/wiki/MediaWiki_talk:Common.css/Archive_11#Teletype_style_fix_for_Chrome
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+
+/* Minimal base styles.
+
+body { font-family: Helvetica, Meiryo, "メイリオ", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", verdana,arial, "lucida grande", sans-serif; }
+select, input, textarea, button { font:99% sans-serif; }
+
+/* Headers (h1, h2, etc) have no default font-size or margin; define those yourself */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+a, a:active, a:visited {
+  color: #000; }
+
+a:hover {
+  color: #000; }
+
+a:hover {
+  text-decoration: none; }
+
+body > header {
+  height: 280px;
+  background: #fd0cb6;
+  border-bottom: 8px white double; }
+
+a.logo {
+  font-family: Helvetica, Meiryo, "メイリオ", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", verdana,arial, "lucida grande", sans-serif;
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 150px;
+  letter-spacing: 18px;
+  width: 960px;
+  height: 106px;
+  margin: 0px auto;
+  position: relative;
+  top: 57px; }
+
+.top-body {
+  margin-top: 306px; }
+
+.body {
+  margin-top: 236px; }
+
+.box, .blankBox {
+  width: 217px;
+  height: 217px;
+  border: 3px #ddd double;
+  cursor: pointer; }
+  .box .upper, .blankBox .upper {
+    padding: 60px 0; }
+  .box .downer, .blankBox .downer {
+    padding: 90px 0; }
+  .box h2, .blankBox h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px; }
+
+.go-top {
+  float: right;
+  margin: 30px 5px; }
+
+p {
+  margin: 48px 0px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #525252; }
+
+footer {
+  font-size: 14px;
+  height: 136px;
+  position: relative;
+  letter-spacing: 1px;
+  margin: 42px 0 0 0; }
+
+footer div.container {
+  position: relative;
+  width: 945px;
+  margin: 0px auto; }
+
+footer div#copyright {
+  position: absolute;
+  top: 61px;
+  left: 0;
+  color: #868686; }
+
+footer div#copyright a {
+  color: #474747; }
+
+h2 a {
+  text-decoration: none;
+  color: #444; }
+
+.clear {
+  clear: both; }
